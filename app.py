@@ -6,7 +6,7 @@ import datetime
 import pickle
 
 app = Flask(__name__, template_folder="template")
-model = pickle.load(open("models\cat.pkl", "rb"))
+model = pickle.load(open("models/cat.pkl", "rb"))
 
 @app.route("/",methods=['GET'])
 @cross_origin()
